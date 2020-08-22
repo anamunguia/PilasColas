@@ -10,7 +10,7 @@ namespace PilasColas
         {
             try
             {
-                Listas.Pilas Listpila = new Listas.Pilas(5);
+                
                 Arreglos.Pilas Arraypila = new Arreglos.Pilas(5);
 
 
