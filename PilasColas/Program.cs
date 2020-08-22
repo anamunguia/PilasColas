@@ -1,4 +1,5 @@
 ﻿using Arreglos;
+using Listas;
 using System;
 
 namespace PilasColas
@@ -9,46 +10,48 @@ namespace PilasColas
         {
             try
             {
-                ArrayPilas pila = new ArrayPilas(5);
+                Listas.Pilas Listpila = new Listas.Pilas(5);
+                Arreglos.Pilas Arraypila = new Arreglos.Pilas(5);
 
-                pila.Agregar("cero");
-                Console.WriteLine(pila.Imprimir());
 
-                Console.WriteLine("-----------");
-                pila.Agregar("uno");
-                Console.WriteLine(pila.Imprimir());
+                   /*  pila.Agregar("cero");
+                     Console.WriteLine(pila.Imprimir());
 
-                Console.WriteLine("-----------");
-                pila.Agregar("dos");
-                Console.WriteLine(pila.Imprimir());
+                     Console.WriteLine("-----------");
+                     pila.Agregar("uno");
+                     Console.WriteLine(pila.Imprimir());
 
-                Console.WriteLine("-----------");
-                pila.Agregar("tres");
-                Console.WriteLine(pila.Imprimir());
+                     Console.WriteLine("-----------");
+                     pila.Agregar("dos");
+                     Console.WriteLine(pila.Imprimir());
 
-                Console.WriteLine("-----------");
-                pila.Agregar("cuatro");
-                Console.WriteLine(pila.Imprimir());
+                     Console.WriteLine("-----------");
+                     pila.Agregar("tres");
+                     Console.WriteLine(pila.Imprimir());
 
-                Console.WriteLine("-----------");
-                pila.Agregar("cinco");
-                Console.WriteLine(pila.Imprimir());
+                     Console.WriteLine("-----------");
+                     pila.Agregar("cuatro");
+                     Console.WriteLine(pila.Imprimir());
 
-                Console.WriteLine("-----------");
-                pila.Eliminar();
-                Console.WriteLine(pila.Imprimir());
+                     Console.WriteLine("-----------");
+                     pila.Agregar("cinco");
+                     Console.WriteLine(pila.Imprimir());
 
-                Console.WriteLine("-----------");
-                pila.Eliminar();
-                Console.WriteLine(pila.Imprimir());
+                     Console.WriteLine("-----------");
+                     pila.Eliminar();
+                     Console.WriteLine(pila.Imprimir());
 
-                Console.WriteLine("-----------");
-                pila.Eliminar();
-                Console.WriteLine(pila.Imprimir());
+                     Console.WriteLine("-----------");
+                     pila.Eliminar();
+                     Console.WriteLine(pila.Imprimir());
 
-                Console.WriteLine("-----------");
-                pila.Eliminar();
-                Console.WriteLine(pila.Imprimir());
+                     Console.WriteLine("-----------");
+                     pila.Eliminar();
+                     Console.WriteLine(pila.Imprimir());
+
+                     Console.WriteLine("-----------");
+                     pila.Eliminar();
+                     Console.WriteLine(pila.Imprimir());  */
             }
             catch (Exception ex)
             {
