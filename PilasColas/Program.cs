@@ -68,7 +68,7 @@ namespace PilasColas
         {
             try
             {
-                ColasCirculares colasCirculares = new ColasCirculares(5);
+                Arreglos.ColasCirculares colasCirculares = new Arreglos.ColasCirculares(5);
 
                 Console.WriteLine(colasCirculares.Imprimir());
 
@@ -108,6 +108,97 @@ namespace PilasColas
                 Console.WriteLine(colasCirculares.Imprimir());
             }
             catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        static void Colas()
+        {
+            try
+            {
+                Arreglos.Colas colas = new Arreglos.Colas(5);
+
+                Console.WriteLine(colas.Imprimir());
+
+                colas.Agregar("cero");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("-----------");
+                colas.Agregar("uno");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("-----------");
+                colas.Agregar("dos");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("-----------");
+                colas.Agregar("tres");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("-----------");
+                colas.Agregar("cuatro");
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("-----------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("-----------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("-----------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+
+                Console.WriteLine("-----------");
+                colas.Eliminar();
+                Console.WriteLine(colas.Imprimir());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        static void ColasDobles()
+        {
+            try
+            {
+                Arreglos.ColasDobles colasDobles = new Arreglos.ColasDobles(5);
+
+                Console.WriteLine(colasDobles.Imprimir());
+
+                colasDobles.PFront("cero");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("-----------");
+                colasDobles.PFront("uno");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("-----------");
+                colasDobles.PFront("dos");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("-----------");
+                colasDobles.PBack("tres");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("-----------");
+                colasDobles.PBack("cuatro");
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("-----------");
+                colasDobles.DFront();
+                Console.WriteLine(colasDobles.Imprimir());
+
+                Console.WriteLine("-----------");
+                colasDobles.DBack();
+                Console.WriteLine(colasDobles.Imprimir());
+
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
